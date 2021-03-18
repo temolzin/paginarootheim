@@ -6,8 +6,19 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Root Heim Company</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+
+  <!--Meta TAG Facebook-->
+  <meta property="og:url" content="https://rootheim.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Root Heim Company" />
+  <meta property="og:description" content="Empresa dedicada a servicios de Tecnologías de la Información" />
+  <meta property="og:image" content="https://rootheim.com/assets/img/hero-bg2.png" /> 
+  <meta property="fb:app_id" content="846096216257347" /> 
+
+  <!--MetaTAG-->
+  <meta content="Tecnología, Desarrollo de Software, Seguridad Informática, Administración de Servidores, Postgresql" name="keywords">
+  <meta name="author" content="Root Heim Company" />
+  <meta name="copyright" content="Root Heim Company" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -19,13 +30,18 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2VD.css" rel="stylesheet">
+  <link href="assets/css/stylesPTJ.css" rel="stylesheet">
+  <link href="assets/css/styleJCS.css" rel="stylesheet">
+  <link href="assets/css/styleJ.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- =======================================================
   * Template Name: Squadfree - v2.2.0
@@ -50,8 +66,18 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#hero">Inicio</a></li>
-          <li><a href="#about">Acerca de Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li class="drop-down"><a href="#about">Acerca de Nosotros</a>
+            <ul>
+              <li class=""><a href="#Valores">Valores</a></li>          
+            </ul>
+          </li>
+          <li class="drop-down"><a href="#services">Servicios</a>
+            <ul>
+              <li class=""><a href="https://ecommerce.rootheim.com" target="_blank">Ecommerce</a></li>          
+              <li class=""><a href="https://blog.rootheim.com" target="_blank">Blog</a></li>          
+            </ul>
+          </li>
+          <li><a href="#prices">Precios</a></li>
           <!--<li><a href="#portfolio">Portafolio</a></li>-->
           <li><a href="#contact">Contáctanos</a></li>
 
@@ -63,10 +89,20 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <h1>Bienvenido a Root Heim</h1>
-      <h2>Consultoría en Servicios de Tecnologías de la Información</h2>
-      <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+    <div class="texture" data-aos="fade-up">
+      <video loop muted autoplay preload="auto">
+        <source src="world.mp4" type="video/mp4">
+        ROOT HEIM COMPANY
+      </video>
+    </div>
+
+    <div class="caption">
+      <div class="masthead-subheading">
+        <img width="200px" height="190px" src="assets/img/logoroot3.png" class="img-fluid" alt="">
+      </div>
+      <h1 style="color:#2745df" >ROOT HEIM COMPANY</h1>
+      </br>           
+      <a href="#about" class="btn-get-started scrollto "><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
 
@@ -74,20 +110,52 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container">
+      <!--Sidebar Redes Sociales-->
+      <div class="container-bar">
+        <input type="checkbox" id="btn-social">
+        <label for="btn-social" class="icon-play-1">&raquo;</label>
+        <div class="icon-social">
+          <a target="_blank" href="https://www.facebook.com/RootHeim" class="icon-facebook fab fa-facebook-f">
+            <span class="title">Facebook</span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/rootheimcompany/" class="icon-instagram fab fa-instagram">
+            <span class="title">Instagram</span>
+          </a>
+          <a target="_blank" href="#" class="icon-youtube fab fa-youtube">
+          <span class="title">Youtube</span>
+          </a>
+          <a target="_blank" href="https://twitter.com/RootHeim" class="icon-twitter fab fa-twitter">
+            <span class="title">Twitter</span>
+          </a>
+          <a target="_blank" href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20cotizar%20un%20servicio" class="icon-whatsapp fab fa-whatsapp">
+            <span class="title">Whatsapp</span>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/company/" class="icon-linkedin fab fa-linkedin-in">
+            <span class="title">Linkedin</span>
+          </a>
+          <a target="_blank" href="https://ecommerce.rootheim.com/" class="icon-ecommerce fas fa-shopping-cart">
+            <span class="title">Ecommerce</span>
+          </a>          
+          <a target="_blank" href="https://blog.rootheim.com/" class="icon-blog fab fa-blogger-b">
+            <span class="title">Blog</span>
+          </a>
+        </div>
+      </div>
 
+      <div class="container">
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
               <h3>¿Quiénes somos?</h3>
               <p class="text-justify">
-				Somos una compañía cuya intención y propósito es
-				ser reconocida por generar servicios especializados en
-				las TIC´s, en un mercado internacional, presentando
-				constantes opciones de innovación, mejora y
-				versatilidad.
+                Somos una compañía cuya intención y propósito es
+                ser reconocida por generar servicios especializados en
+                las TIC´s, en un mercado internacional, presentando
+                constantes opciones de innovación, mejora y
+			          versatilidad.
               </p>
-              <a href="#about" class="text-primary">Acerca de Nosotros <i class="bx bx-chevron-right"></i></a>
+              <a href="#about" class="text-primary ">Acerca de Nosotros <i class="bx bx-chevron-right"></i></a><br/>
+
             </div>
           </div>
           <div class="col-xl-7 d-flex align-items-stretch">
@@ -98,34 +166,43 @@
                   <h4>Misión</h4>
                   <p class="text-justify">
                   	Brindar servicios profesionales a nuestros clientes con
-					soluciones agiles y consistentes, implementando las
-					tecnologías actuales del mercado, además de
-					innovaciones que el mercado requiere; manteniendo
-					siempre la calidad de nuestro servicio,
-					caracterizándonos por el trato, oportunidades y forma
-					de trabajo con nuestros colaboradores. Haciendo
-					saber que no requieres encerrarte en una oficina, tú eres
-					dueño de tu tiempo.
+                    soluciones agiles y consistentes, implementando las
+                    tecnologías actuales del mercado, además de
+                    innovaciones que el mercado requiere; manteniendo
+                    siempre la calidad de nuestro servicio,
+                    caracterizándonos por el trato, oportunidades y forma
+                    de trabajo con nuestros colaboradores. Haciendo
+                    saber que no requieres encerrarte en una oficina, tú eres
+                    dueño de tu tiempo.
                   </p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-code-alt"></i>
                   <h4>Visión</h4>
                   <p class="text-justify">Ser una empresa reconocida a nivel
-					mundial ofreciendo servicios profesionales
-					especializados en tecnología y capacitación
-					a empresas públicas y privadas, derivado de
-					importaciones y exportaciones a clientes
-					nacionales y extranjeros.</p>
+                    mundial ofreciendo servicios profesionales
+                    especializados en tecnología y capacitación
+                    a empresas públicas y privadas, derivado de
+                    importaciones y exportaciones a clientes
+                    nacionales y extranjeros.</p>
                 </div>
-                <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bxs-quote-single-left"></i>
                   <h4>Filosofía</h4>
                   <p class="text-justify">
-                  	                La filosofía de ROOT HEIM COMPANY S.A. de C.V., radica en ofrecer servicios
-					ampliamente profesionales dentro del mercado de las TIC´s internacionalmente, con el
-					propósito de mejorar e innovar constantemente, mostrando la mejor presentación,
-					calidad; afrontando los retos que presentan las organizaciones hoy en dia.
+                  	La filosofía de ROOT HEIM COMPANY S.A. de C.V., radica en ofrecer servicios
+                    ampliamente profesionales dentro del mercado de las TIC´s internacionalmente, con el
+                    propósito de mejorar e innovar constantemente, mostrando la mejor presentación,
+                    calidad; afrontando los retos que presentan las organizaciones hoy en dia.
+                  </p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="icofont-bullseye"></i>
+                  <h4>Objetivo</h4>
+                  <p class="text-justify">
+                    Formar una compañía cuya intención y propósito es ser reconocida por generar servicios especializados en las TIC s, en un mercado
+                    internacional, presentando constantes opciones de innovación, mejora y versatilidad. Caracterizándonos por nuestra forma de
+                    trabajar.
                   </p>
                 </div>
                 <!--<div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -139,97 +216,371 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
+
+        <!-- ======= valores Section ======= -->
+        <section id="about" class="why-us section-bg">
+          <div id="Valores">
+            <div class="container-fluid" data-aos="fade-up" >
+      
+              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+                <h2>Valores</h2>
+              </div>
+              <div class="row">
+      
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-1 order-lg-1">    
+      
+                  <div class="accordion-list">
+                    <ul>
+                      <li>
+                        
+                        <a data-toggle="collapse" href="#accordion-list-1" class="collapsed"><span>01 </span>Equipo<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i> </a>
+                        <div id="accordion-list-1" class="collapse" data-parent=".accordion-list">
+                          <p id="equipo">
+                            Trabajo constante entre cada uno
+                            de los colaboradores, aplicando día
+                            a día, liderazgo, trabajo en equipo,
+                            responsabilidad y comunicación.
+                          </p>
+                        </div>
+                      </li>
+      
+                      <li>
+                        <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Compromiso <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                          <p id="compromiso">  
+                            Cada una de las funciones y
+                            actividades son importantes. Por
+                            esto mismo cada colaborador
+                            debe tener un compromiso solido
+                            en la realización y cumplimiento
+                            de dichas actividades.
+                          </p>
+                        </div>
+                      </li>
+      
+                      <li>
+                        <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Innovación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                          <p>
+                            En ROOT HEIM COMPANY S.A de
+                            C.V., aceptamos la iniciativa, para
+                            esto nos encontramos totalmente
+                            abiertos a la implementación y
+                            creación de software a mejoras,
+                            innovación. No nos limitamos a
+                            nuevas ideas.
+                          </p>
+                        </div>
+                      </li>
+  
+                      <li>
+                        <a data-toggle="collapse" href="#accordion-list-4" class="collapsed"><span>04</span> Respeto <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-4" class="collapse" data-parent=".accordion-list">
+                          <p>
+                            Así como hay confianza, debe
+                            existir un debido respeto hacia y
+                            con cada uno de las que integramos
+                            ROOT HEIM COMPANY S.A de C.V.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-2">    
+      
+                  <div class="accordion-list-2">
+                    <ul>
+                                <li>
+                                  <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><span>05</span> Responsabilidad <i
+                                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                  <div id="accordion-list-5" class="collapse" data-parent=".accordion-list-2">
+                                    <p>
+                                      Ten presente que formas parte de una
+                                      empresa en constantemente crecimiento e
+                                      innovación; por lo que tendrás a veces poca
+                                      o mucha carga laboral, por esto mismo se te
+                                      exige seas totalmente responsable de tu
+                                      trabajo, entregues en tiempo y forma tus
+                                      actividades y cumplas con tus debidas
+                                      funciones, así como todo lo que se pide.
+                                    </p>
+                                  </div>
+                                </li>
+                              
+                                <li>
+                                  <a data-toggle="collapse" href="#accordion-list-6" class="collapsed"><span>06</span> Solidaridad <i
+                                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                  <div id="accordion-list-6" class="collapse" data-parent=".accordion-list-2">
+                                    <p>
+                                      Agradecemos tu trabajo,
+                                      conocimientos y experiencia, por
+                                      esto mismo te pedimos contribuyas
+                                      en el apoyo de tus compañeros. Ten
+                                      iniciativa a preguntar sobre dudas,
+                                      apoyo, nuevas ideas.
+                                    </p>
+                                  </div>
+                                </li>
+                              
+                                <li>
+                                  <a data-toggle="collapse" href="#accordion-list-7" class="collapsed"><span>07</span> Políticas <i
+                                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                  <div id="accordion-list-7" class="collapse" data-parent=".accordion-list-2">
+                                    <p>
+                                      Cada colaborador es libre de
+                                      disponer de su tiempo a su
+                                      manera, mientras sus actividades
+                                      hayan sido finalizadas o en su carouselrevisadas y evaluadas.
+                                    </p>
+                                  </div>
+                                </li>
+                              
+                                <li>
+                                  <a data-toggle="collapse" href="#accordion-list-8" class="collapsed"><span>08</span> Honestidad <i
+                                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                  <div id="accordion-list-8" class="collapse" data-parent=".accordion-list-2">
+                                    <p>
+                                      Muchos de estos valores son de
+                                      aplicación en diversas cuestiones,
+                                      pero este valor en especifico
+                                      conlleva muchas situaciones, de
+                                      las cuales se exige a cada
+                                      colaborador ser honesto en todo.
+                                    </p>
+                                  </div>
+                                </li>
+                    </ul>
+                  </div>
+      
+                </div>
+
+              </div>
+      
+            </div>
+          </div>
+        </section><!-- End valores Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section class="page-section" id="services">
       <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Servicios</h2>
-          <p class="text-center">Contamos con diferentes servicios dentro del ramo de TI</p>
-        </div>
-
+        <h2 class="text-center mt-0">SERVICIOS</h2>
+        <hr class="divider my-4" />
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bx-command"></i></div>
-              <h4 class="title"><a href="#">Capacitación</a></h4>
-              <p class="description ">Contamos con diferentes cursos impartidos de manera online. <br>Tenemos Profesionistas 100% capacitados en el tema que imparten los cursos.  </p>
+          
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Desarrollo e implementación de E-commerce','fas fa-x fa-certificate','assets/img/servicios/ecommers.jpg','Las tiendas tradicionales actualmente están compitiendo día a día para hacerse distinguir de otras. Para hacerte notar necesitas estrategias de ventas que te ayuden en este mundo digital tan saturado, en el que cada vez es más difícil ofrecer nuevas promociones a audiencias similares.<br /><br /> Sin embargo, y a pesar de todos estos obstáculos, existe una oportunidad para que tu compañía destaque de         todas las demás. <br /><br /> Root Heim te ofrece la implementación de un ecommerce basado en tus necesidades como empresa, además de que los clientes pueden pagar con cualquier forma de pago. Empieza a vender en línea, nosotros nos encargamos del resto.')">
+                <i class="fas fa-4x fa-certificate  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Desarrollo e implementación de E-commerce</h3>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="#">Desarrollo de Páginas Web</a></h4>
-              <p class="description">Te ofrecemos el desarrollo de toda tu página web, incluyendo hosting y dominio.</p>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button type="button"
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Capacitación','fas fa-x fa-book','assets/img/servicios/capacitacion.jpg','Contamos con diferentes cursos impartidos de manera online. Tenemos Profesionistas 100% capacitados en el tema que imparten los cursos.')">
+                <i class="fas fa-4x fa-book  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Capacitación</h3>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-code-alt"></i></div>
-              <h4 class="title"><a href="#">Desarrollo de Software a Medida</a></h4>
-              <p class="description">Si necesitas un sistema web o aplicación móvil o cualquier software nosotros te lo realizamos.</p>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Desarrollo de Software a Medida','fas fa-x fa-laptop-code','assets/img/servicios/desarrolloAmedida.jpg','En desarrollo a la medida creamos el software exactamente a las necesidades que requieres. <br> Un software a la medida es único por lo cuál nunca encontrarás un software igual ya que está hecho únicamente con las especificaciones que nos proporcionas, gracias a esto podrás mejorar y automatizas en tiempo y esfuerzo en tus procesos empresariales, acorde a tus necesidades.')">
+                <i class="fas fa-4x fa-laptop-code  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Desarrollo de Software a Medida</h3>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Administración de Servidores</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Administración de Servidores','fas fa-x fa-server','assets/img/servicios/server.jpg','Garantice la gestión de sus servicios, de soporte y mantenimiento a sus sistemas, evitando tiempos de inactividad, perdidas y fallos en sus servidores, por medio de mantenimientos programados, gestione mejor su información y tiempos de respuesta, sólo indícanos el problema que deseas resolver.')">
+                <i class="fas fa-4x fa-server  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Administración de Servidores</h3>
             </div>
           </div>
-
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Administración de Bases de Datos','fas fa-x fa-database','assets/img/servicios/database.jpg','Tenemos especialistas los cuáles pueden administrar sus bases de datos en diferentes gestores como SQL Server, Postgresql,  Mysql. Entre las actividades consiste en: <br /><br /> Implementar, dar soporte y gestionar bases de datos corporativas.<br /><br /> Crear y configurar bases de datos relacionales.<br /><br /> Ser responsables de la integridad de los datos y la disponibilidad.<br /><br /> Diseñar, desplegar y monitorizar servidores de bases de datos.<br /><br /> Diseñar la distribución de los datos y las soluciones de almacenamiento.<br /><br /> Garantizar la seguridad de las bases de datos, realizar copias de seguridad y llevar a cabo la recuperación de desastres.<br /><br /> Planificar e implementar el aprovisionamiento de los datos y aplicaciones.<br /><br /> Diseñar planes de contingencia.<br /><br /> Diseñar y crear las bases de datos corporativas de soluciones avanzadas.<br /><br /> Analizar y reportar datos corporativos que ayuden a la toma de decisiones en la inteligencia de negocios.<br /><br /> Producir diagramas de entidades relacionales y diagramas de flujos de datos, normalización esquemática, localización lógica y física de bases de datos y parámetros de tablas.<br /><br />')">
+                <i class="fas fa-4x fa-database  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Administración de Bases de Datos</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Implementación de servicios','fas fa-x fa-shapes','assets/img/servicios/services.jpg','Sabemos lo importante, que es tu comunicación y la forma en que presentas tus servicios a tus clientes, en ROOTHEIM contamos    servicios implementación, instalación, soporte y mantenimiento de soluciones y herramientas, que ya existen en el mercado y que están           orientadas y diseñadas para cubiri una necesidad en especifico a través de un servicio. <br /><br /> Experimente el uso de una solución robusta que puede customizar de acuerdo a sus requerimientos, según sea el sector de su organización: <br /><br /> Servidor de correo electrónico: <br /><br />  Manténgase comunicado con el resto del mundo por medio de un correo electrónico con su propio dominio, y cause una mejor imagen            corporativa, al incluir el nombre de la empresa y la dirección del sitio web, protectarás confienza, seriedad y seguridad ante tus clientes y        proveedores. <br /><br /> Servidor LAMP: <br /><br /> Mantenga sus paginas y sistemas web alojados en su propio servidor, y lleve el control del manejo de su información, mantenga sus paginas web al día, y a sus necesidades.')">
+                <i class="fas fa-4x fa-shapes  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Implementación de servidores</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Hardening de servidores','fas fa-x fa-chalkboard','assets/img/servicios/hardening.jpg','Mantenga sus servidores protegidos mediante la reducción de vulnerabilidades, esto se logra eliminando software, servicios, usuarios, etc; innecesarios en el sistema; así como cerrando puertos que tampoco estén en uso además de muchas otros métodos y técnicas que implementaran en sus sistemas, haciéndole la vida mas difícil al atacante.')">
+                <i class="fas fa-4x fa-chalkboard  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Hardening de servidores</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Cloud','fas fa-x fa-cloud','assets/img/servicios/cloud.jpg','ROOTHEIM fortalece a las empresas a través de soluciones que garantizan el acceso de los datos, aplicaciones de negocio desde cualquier parte del mundo, continuidad de operación de las aplicaciones y crecimiento requerido de infraestructura en tecnologías líderes de mercado, que cumplen con estándares  nacionales e internacionales.<br /><br /> Contamos con personal cualificado para este tipo de situaciones')">
+                <i class="fas fa-4x fa-cloud  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Cloud</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Capacitaciones y concientización a usuarios','fas fa-x fa-users-cog','assets/img/servicios/capacitacionpersonalizada.jpg','Las organizaciones deben adaptarse a los cambios tecnológicos para poder manejar de manera mas fácil su y confiable de su información, operación y crecimiento.<br /><br /> En ROOTHEIM entendemos esas necesidades, y por ello contamos con servicio de Capacitaciones especificas, todos los planes son a la medida haciendo que se adapte al tiempo de su organización, estos van desde niveles básicos, intermedios y avanzados.<br /><br /> Contamos con capacitación tecnológica en diferentes temas, utilizando las últimas tecnologías disponibles tanto privadas como opensource.<br /><br /> La capacitación está disponible en dos modalidades: presencial en vivo y remota en vivo. La primera se puede   llevar a cabo localmente en las instalaciones del cliente en México, la segunda se lleva a cabo a través de un escritorio remoto interactivo.')">
+                <i class="fas fa-4x fa-users-cog  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Concientización a usuarios</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Desarrollo de aplicaciones web','fas fa-x fa-file-code','assets/img/servicios/desarrolloweb2.jpg','Actualmente las aplicaciones web son una alternativa para desarrollo de software más demandada por todo tipo de    empresas, pequeñas hasta las grandes multinacionales cuentan con Aplicaciones Web a medida que solucionan problemas de negocio, ganando en eficiencia y productividad, o crean plataformas en las que usuarios y clientes interaccionan con la empresa de forma ágil y sencilla.<br /><br />               Trabajamos con metodoligías de desarrollo ágil para adaptar la forma de trabajo a las condiciones del proyecto, consiguiendo flexibilidad e inmediatez en la respuesta para amoldar el proyecto y su desarrollo a las circunstancias especificas del entorno. En ROOTHEIM te podemos crear esa aplicación web que tanto anhelas, con las especificaciones exactas de tu empresa.')">
+                <i class="fas fa-4x fa-file-code  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Desarrollo de aplicaciones web</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Desarrollo de Sitios Web','fas fa-x fa-globe','assets/img/servicios/sitios.jpg','Actualmente existen distintos tipos de sitios web, por ejemplo: un blog, landing page, wiki, sitio de descargas, sitio de subastas, de noticias, institucional, de comunidades, con bases de datos, de política, de educación, entre otros.<br /><br /> Podemos crearte cualquier tipo de sitio web especialmente orientado a tus necesidades como empresa. Recuerda que con un sitio web fortaleces tu imagen corporativa, das presencia online a tu empresa y creas una puerta de entrada a consumidores potenciales en todo el mundo. <br /><br /> Al igual contamos con posicionamiento SEO, nos enfocamos en factores de mayor impacto para posicionar tu sitio web en los primeros lugares de los buscadores. El SEO (por sus siglas en Inglés Search Engine Optimization), es un conjunto de estrategias y técnicas que buscan posicionar tu sitio web en las consultas que los usuarios realizan en los   buscadores(Google, Bing, Yahoo, etc).')">
+                <i class="fas fa-4x fa-globe  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Desarrollo de Sitios Web</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Administración de Infraestructura','fas fa-x fa-users-cog','assets/img/servicios/estructura.jpg','ROOTHEIM ofrece servicios y provee de personal adecuado para administrar su infraestructura, lo que le permitirá que sus servicios operen de una mejor manera, siguiendo mejores practicas, y estándares para asegurar la operación continua de sus                  aplicaciones y sus servicios críticos.')">
+                <i class="fas fa-4x fa-users-cog  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Administración de Infraestructura</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Desarrollo de aplicaciones móviles','fas fa-x fa-mobile-alt','assets/img/servicios/movil.jpg','Los dispositivos móviles aparte de ser una fuente de comunicación, han impulsado la comunicación empresarial y permiten a las organizaciones la proliferación y el manejo de la información, representando un punto de venta hacia los usuarios, y es algo que se tiene que tener presente, ROOTHEIM te proporciona las tecnologías para poder innovar tu negocio.')">
+                <i class="fas fa-4x fa-mobile-alt  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Desarrollo de aplicaciones móviles</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <button
+                class="h4 mb-2 btn btn-outline animate__animated animate__pulse animate__infinite animate__delay-2s animate__slower"
+                data-toggle="modal" data-target="#portfolioModal1" onclick="mostrarModal('Soluciones integrales','fas fa-x fa-user-check','assets/img/servicios/soluciones.jpg','Ofrecemos soluciones integrales de servicios tecnológicos de vanguardia. Generamos proyectos para industrias, comercios, administraciones publicas, empresas concesionarias, entidades financieras, empresas promotoras, empresas privadas, empresas de servicios e inversores. Contamos con personas especializadas, para cada tipo de tecnología, desarrollando un amplio catálogo de labores de y gestiones de servicio, ingeniería, construcción, instalaciones tecnológicas, infraestructuras avanzadas, y desarrollos tecnológicos.')">
+                <i class="fas fa-4x fa-user-check  text-primary mb-4"></i><br />
+              </button>
+              <h3 class="h4 mb-2" >Soluciones integrales</h3>
+            </div>
+          </div>
         </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
-    <!-- ======= Counts Section ======= -->
-    <!--<section id="counts" class="counts  section-bg">
-      <div class="container">
+                <!-- Portfolio Modal 1-->
+                <div class="portfolio-modal modal fade" id="portfolioModal1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                  role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close" onclick="cerrar()">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                      </button>
+                      <div class="modal-body text-center">
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <!-- titulo de todos los modales -->
+                              <div>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="tituloModal">
+                                </h2>
+                
+                              </div>
+                              <!-- fin de titulo de todos los modales -->
+                
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                  <!-- icono de todos los modales -->
+                                  <div>
+                                    <p id="iconoModal"></p>
+                
+                                  </div>
+                                  <!-- fin de los icono de todos los modales -->
+                                </div>
+                                <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image-->
+                
+                              <!-- inmagenes de todos los modales -->
+                              <div>
+                                <p id="imgModal"></p>
+                              </div>
+                              <!-- finde las imagenes de todos los mdales -->
+                
+                              <!-- Portfolio Modal - Text-->
+                
+                              <!-- informacion de todos los modales -->
+                              <div>
+                                <p id="textModal"></p>           
+                
+                                <button class="btn btn-primary" data-dismiss="modal" onclick="cerrar()">
+                                  Cerrar
+                                </button>
+                              </div>
+                              <br />
+                              <!-- fin de la informacion de los modales -->
+                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- End porfolio modal1 -->
 
-        <div class="row no-gutters">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Counts Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -245,193 +596,92 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <!--<section id="portfolio" class="portfolio">
-      <div class="container">
 
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Portafolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <section class="pricing-table" id="prices">
+        <div class="container">
+            <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+              <h2>Precios</h2>
+              <p>Nos complace mostrarte los paquetes que tenemos para tí, escoge el que más se adapte a tus necesidades. <br>
+                <strong>Todos nuestros servicios incluyen IVA, generamos factura en cualquiera de nuestros servicios.</strong> 
+                <br>Si buscas algo más personalizado envíanos mensaje. <br> <a target="_blank" href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20cotizar%20un%20servicio%20personalizado"> +52 56 2364 0302</a></p>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="item border border-primary rounded">
+                        <div class="heading">
+                            <h3>SITIO WEB</h3>
+                        </div>
+                        <p>Elaboramos tu sitio web con la calidad de Root Heim.</p>
+                        <div class="features">
+                            <h4><span class="feature">Hosting y Dominio: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Certificado SSL: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Responsivo: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Cambios: </span> : <span class="value">3</span></h4>
+                            <h4><span class="feature">Secciones: </span> : <span class="value">4</span></h4>
+                            <h4><span class="feature">Correos</span> : <span class="value">50</span></h4>
+                            <h4><span class="feature">SEO</span> : <span class="value">Básico</span></h4>
+                            <h4><span class="feature">Diseño de Logotipo</span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">IVA Incluído</span> : <span class="value">Facturamos</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>$7,999.00 MXN</h4>
+                        </div>
+                        <a target="_blank" href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20comprar%20un%20sitio%20web%20$7,999.00"><button class="btn btn-block btn-outline-primary" type="submit">COMPRAR</button></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="item border border-warning rounded">
+                        <div class="ribbon">Promoción</div>
+                        <div class="heading">
+                            <h3>ECOMMERCE</h3>
+                        </div>
+                        <p>Nosotros sabemos que las tiendas online se han vuelto indispensable, así que te ofrecemos la mejor calidad al realizar tu tienda online.</p>
+                        <div class="features">
+                            <h4><span class="feature">Hosting y Dominio: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Certificado SSL: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Correos</span> : <span class="value">Ilímitados</span></h4>
+                            <h4><span class="feature">Rsponsivo</span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">SEO</span> : <span class="value">Básico</span></h4>
+                            <h4><span class="feature">Tienda Online</span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Registro de Productos</span> : <span class="value">30</span></h4>
+                            <h4><span class="feature">Diseño de Logotipo</span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">IVA Incluído</span> : <span class="value">Facturamos</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>$14,999.00 MXN</h4>
+                        </div>
+                         <a target="_blank" href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20comprar%20un%20Ecommerce%20$14,999.00"><button class="btn btn-block btn-primary" type="submit">COMPRAR</button></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="item border border-danger rounded">
+                        <div class="heading">
+                            <h3>LANDING PAGE</h3>
+                        </div>
+                        <p>Recuerda que la creación de Landing Page, te ayuda para tener una mejor conversión de tus clientes. </p>
+                        <div class="features">
+                            <h4><span class="feature">Hosting y Dominio: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Certificado SSL: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Responsivo: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Formulario: </span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">Secciones: </span> : <span class="value">4</span></h4>
+                            <h4><span class="feature">Correos</span> : <span class="value">50</span></h4>
+                            <h4><span class="feature">Diseño de Logotipo</span> : <span class="value">Incluído</span></h4>
+                            <h4><span class="feature">IVA Incluído</span> : <span class="value">Facturamos</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>$6,999.00 MXN</h4>
+                        </div>
+                         <a target="_blank" href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20comprar%20una%20landing%20page%20$6,999.00"><button class="btn btn-block btn-outline-primary" type="submit">COMPRAR</button></a>
+                    </div>
+                </div>
+            </div>
+            <div align="center" class="col-lg-12">
+              <a href="assets/docs/paquetesweb.pdf" download="Paquetes Web.pdf" target="_blank"><button class="btn-lg btn-danger"> <i class="far fa-file-pdf"></i> Descargar PDF Servicios</button></a>
+            </div>
         </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!--<section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item" data-aos="fade-up">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Testimonials Section -->
+    </section>
+ 
 
 
     <!-- ======= Contact Section ======= -->
@@ -457,7 +707,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Whatsapp</h3>
-              <p> <a href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20cotizar%20un%20servicio"> +52 56 2364 0302</a></p>
+              <p> <a target="_blank" href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20cotizar%20un%20servicio"> +52 56 2364 0302</a></p>
             </div>
           </div>
 
@@ -524,7 +774,7 @@
               <div class="social-links mt-3">
                 <a href="https://twitter.com/RootHeim" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.facebook.com/RootHeim" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/root_heim/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.instagram.com/rootheimcompany/" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="https://wa.me/525623640302?text=Hola%20Root%20Heim%20Quiero%20cotizar%20un%20servicio" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
                 <a href="https://www.linkedin.com/company/rootheim/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
@@ -537,8 +787,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">Acerca de Nosotros</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Términos de Servicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Políticas de Privacidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="assets/docs/TerminosCondicionesRootHeim.pdf" target="_blank">Términos de Servicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="assets/docs/PoliticasRootHeim.pdf" target="_blank">Políticas de Privacidad</a></li>
             </ul>
           </div>
 
@@ -590,6 +840,40 @@
 
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '828716938060273');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=828716938060273&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  
+  <script type="text/javascript">
+
+    function mostrarModal(titulo,icono,imagen,texto){
+
+      $("#tituloModal").html(titulo);
+      var iconoModal = '<p id="icono2"><i class="'+icono+'"></i></p></i>';
+      $("#iconoModal").html(iconoModal);
+      var imagenModal = '<img class="img-fluid rounded mb-5" src="'+imagen+'" alt="" />';
+      $("#imgModal").html(imagenModal);
+      $("#textModal").html(texto);
+      $("#portfolioModal1"),modal("show");
+    }
+
+  </script>
 
   <script>
       grecaptcha.ready(function() {
@@ -697,7 +981,6 @@
       });
     }
   </script>
-
 </body>
 
 </html>
